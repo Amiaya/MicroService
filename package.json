@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "postinstall": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node --file ./src/server.ts",
+    "start": "npx tsc && node ./src/server.js",
     "dev": "tsnd --files ./src/server.ts"
   },
   "keywords": [],
